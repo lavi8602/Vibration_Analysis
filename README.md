@@ -26,11 +26,11 @@ Real‑time machinery health monitoring with triaxial accelerometer, time‑doma
 2.	Raw 14 bit values are converted to 16 bit signed integers and sent over UART (6 bytes per sample, little endian).
 3.	Python script:
 	- Reads binary data from serial port.
-  - Maintains a sliding window of 512 samples.
-  - Plots live acceleration waveform.
-  -	Computes RMS, peak, crest factor, kurtosis.
-  -	Performs FFT and displays spectrum.
-  -	Flags anomalies based on predefined thresholds.
+    - Maintains a sliding window of 512 samples.
+    - Plots live acceleration waveform.
+    - Computes RMS, peak, crest factor, kurtosis.
+    - Performs FFT and displays spectrum.
+    - Flags anomalies based on predefined thresholds.
 
 
 
