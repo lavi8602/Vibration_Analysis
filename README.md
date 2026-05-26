@@ -25,9 +25,10 @@ Real‑time machinery health monitoring with triaxial accelerometer, time‑doma
 1.	STM32 reads MSA301 every 1 ms (1000 Hz) in a timer ISR.
 2.	Raw 14 bit values are converted to 16 bit signed integers and sent over UART (6 bytes per sample, little endian).
 3.	Python script:
-a.	Reads binary data from serial port.
-b.	Maintains a sliding window of 512 samples.
-c.	Plots live acceleration waveform.
-d.	Computes RMS, peak, crest factor, kurtosis.
-e.	Performs FFT and displays spectrum.
-f.	Flags anomalies based on predefined thresholds.
+   a.	Reads binary data from serial port.
+   b.	Maintains a sliding window of 512 samples.
+   c.	Plots live acceleration waveform.
+   d.	Computes RMS, peak, crest factor, kurtosis.
+   e.	Performs FFT and displays spectrum.
+   f.	Flags anomalies based on predefined thresholds.
+
